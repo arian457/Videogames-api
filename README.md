@@ -16,9 +16,9 @@ on both sides [./clients](./clients) and [./server](./client)
 *note: 
 to run the server side, you need to create a file named "process.env" with the following parameters (only with Postgres):*
 
-*DB_USER: username that has the access to de DB
-*DB_PASSWORD: password for that username
-*DB_HOST: name of the host that the DB are connected (e.g.:localhost:5436)
+*DB_USER: username that has the access to de DB*                  
+*DB_PASSWORD: password for that username*                       
+*DB_HOST: name of the host that the DB are connected (e.g.:localhost:5436)*                           
 
 
 
