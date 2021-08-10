@@ -18,7 +18,7 @@ to run the server side, you need to create a file named "process.env" with the f
 
 *DB_USER: username that has the access to de DB*                  
 *DB_PASSWORD: password for that username*                       
-*DB_HOST: name of the host that the DB are connected (e.g.:localhost:5436)*                           
+*DB_HOST: name of the host that the DB is connected (e.g.:localhost:5436)*                           
 
 
 
