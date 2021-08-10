@@ -9,7 +9,7 @@ for running the proyect you need to:
 
 ##`npm start`
 
-on both sides [../clients](../clients) and [../server](../client)
+on both sides [./clients](./clients) and [./server](./client)
 
 
 
