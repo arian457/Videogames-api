@@ -13,8 +13,8 @@ on both sides [./clients](./clients) and [./server](./client)
 
 on both sides [./clients](./clients) and [./server](./client)
 
-##*note: 
-to run the server side, you need to create a file named "process.env" with the following parameters (only with Postgres):
+*note: 
+to run the server side, you need to create a file named "process.env" with the following parameters (only with Postgres):*
 
 *DB_USER: username that has the access to de DB
 *DB_PASSWORD: password for that username
