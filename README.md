@@ -5,11 +5,16 @@ for running the proyect you need to:
 
 ##`npm install`
 
+on both sides [./clients](./clients) and [./server](./client)
+
 ### and
 
 ##`npm start`
 
 on both sides [./clients](./clients) and [./server](./client)
+
+###note: 
+"para cambiar
 
 
 
