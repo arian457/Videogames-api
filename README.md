@@ -3,18 +3,22 @@ A videogames api made with Rawg.io api and PostrgreSQL (sequelize)
 
 for running the proyect you need to: 
 
-##`npm install`
+`npm install`
 
 on both sides [./clients](./clients) and [./server](./client)
 
 ### and
 
-##`npm start`
+`npm start`
 
 on both sides [./clients](./clients) and [./server](./client)
 
-###note: 
-"para cambiar
+##*note: 
+to run the server side, you need to create a file named "process.env" with the following parameters (only with Postgres):
+
+*DB_USER: username that has the access to de DB
+*DB_PASSWORD: password for that username
+*DB_HOST: name of the host that the DB are connected (e.g.:localhost:5436)
 
 
 
