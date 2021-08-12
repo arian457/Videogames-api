@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import AddGame from './components/addGame';
 import {Link, Route} from 'react-router-dom'
 import Genres from './components/Genres';
+import PageButtons from './components/PageButtons';
 import Card from './components/Card';
 function App({getAllGames, getAllGenres}) {
 
@@ -18,10 +19,11 @@ function App({getAllGames, getAllGenres}) {
   return (
     <div className="App">
      
-     <NavBar></NavBar>
+      <NavBar></NavBar>
+      <Route path='/Home'><PageButtons /> </Route>
      <Route exact path = '/'><Link to='/Home'><button>Entrar!</button></Link></Route>
      <Route exact path='/Home' component={Cards}/>
-     <Route exact path='/genres/:genresId' component={Genres} />
+     <Route exact path='/Home/genres/:genresId' component={Genres} />
      <Route exact path='/game/:gameId'  component ={Card} /> 
      <Route exact path = '/addGame' component = {AddGame}/> 
     </div>
