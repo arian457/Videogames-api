@@ -24,14 +24,13 @@ const AddGame = ({ genres, submitGame }) => {
         }
     }
     const handleSubmit = (e) => {
-        e.preventDefault()
-            submitGame(game)
-            
+        submitGame(game)
+        
         
     }
-
+    
     return (
-
+        
         <form className='form-div'>
             <input type='text' placeholder='Nombre del juego' name='name' onChange={(e) => setGame({ ...game, [e.target.name]: e.target.value })} ></input>
             <textarea placeholder='descripción' name='description' onChange={(e) => setGame({ ...game, [e.target.name]: e.target.value })}></textarea>
@@ -58,13 +57,13 @@ const AddGame = ({ genres, submitGame }) => {
             {game.name && game.description && game.rating && game.generos.length > 0 && game.platforms.length > 0 ? <button onClick={(e) => handleSubmit(e)}>Agregar</button> : <p>termina</p>}
         </form>
 
-    )
+)
 }
 
 const mapStateToProps = (state) => ({
-
+    
     genres: state.genres
-
+    
 })
 
 const mapDispatchToProps = (dispatch) => {
