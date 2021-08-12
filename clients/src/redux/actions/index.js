@@ -40,6 +40,18 @@ export const filterByRating = (payload) => {
         payload
     }
 }
+export const filterByGenre = (payload) => {
+    return {
+        type: "FILTER_GENRE",
+        payload
+    }
+}
+export const filterByLocal = () => {
+    return {
+        type: "FILTER_LOCAL",
+        
+    }
+}
 export const submitGame = (payload) => {
     return {
         type: 'SUBMIT_GAME',
