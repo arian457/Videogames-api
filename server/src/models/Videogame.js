@@ -32,7 +32,12 @@ module.exports = (sequelize) => {
     platforms: {
       type: DataTypes.JSON,
       allowNull: false
+    },
+    isLocal: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: true
     }
+
 
   }, {
     createdAt: false,
