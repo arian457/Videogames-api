@@ -1,7 +1,6 @@
 const { Router } = require('express');
 const Axios = require('axios')
-// Importar todos los routers;
-// Ejemplo: const authRouter = require('./auth.js');
+
 const { Videogame, Genres } = require('../db.js');
 const {
     API_KEY
@@ -9,8 +8,7 @@ const {
 
 const router = Router();
 
-// Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
+
 
 router.get('/videogames', async (req, res) => {
     let { name, page } = req.query
@@ -61,7 +59,8 @@ router.get('/videogames', async (req, res) => {
                     releaseDate: game.releaseDate,
                     rating: game.rating,
                     platforms: game.platforms,
-                    genres: game.genres.map(gen => gen.dataValues)
+                    genres: game.genres.map(gen => gen.dataValues),
+                    isLocal: game.isLocal
                 }
             })
          
